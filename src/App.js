@@ -7,6 +7,7 @@ import "./App.css";
 import img from './Artboard.png';
 import { Button } from '@mui/material';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ButtonGroup } from "./components/ButtonGroup";
 
 const theme = createTheme({
   palette: {
@@ -16,6 +17,9 @@ const theme = createTheme({
     secondary: {
       main: "#000000",
     },
+  },
+  shape: {
+    borderRadius: "50em",
   },
 });
 
@@ -102,14 +106,19 @@ const App = () => {
       {/* <h1>Alejandrina</h1> */}
       <Scene />
       <div className="footer">
-        <ThemeProvider theme={theme}>
-          <Button variant="outlined" href="mailto:me@alejandrina.me"
-          >Contact</Button>
-          <Button variant="outlined" href="https://www.github.com/agonzalezreyes/"
-          >Github</Button>
-          <Button variant="outlined" href="https://www.linkedin.com/in/alegore/"
-          >LinkedIn</Button>
-         </ThemeProvider>
+
+        <ButtonGroup>
+          <ThemeProvider theme={theme}>
+            <Button variant="outlined" href="mailto:me@alejandrina.me" className="footer-button"
+            >Contact</Button>
+            <Button variant="outlined" href="https://www.github.com/agonzalezreyes/"
+            >Github</Button>
+            <Button variant="outlined" href="https://www.linkedin.com/in/alegore/"
+            >LinkedIn</Button>
+            </ThemeProvider>
+         </ButtonGroup>
+
+         <p className="footer-text">Entrepreneur. Magician. Software Engineer.</p>
       </div>
     </>
   );

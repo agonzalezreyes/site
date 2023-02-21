@@ -43,3 +43,7 @@ h1 {
   font-size: 0.8rem;
 }
 
+.footer footer-text {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
