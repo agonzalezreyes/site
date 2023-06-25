@@ -118,7 +118,7 @@ const App = () => {
             </ThemeProvider>
          </ButtonGroup>
 
-         <p className="footer-text">Entrepreneur. Magician. Software Engineer.</p>
+         {/* <p className="footer-text">Entrepreneur. Magician. Software Engineer.</p> */}
       </div>
     </>
   );
